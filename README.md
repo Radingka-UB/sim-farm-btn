@@ -1,2 +1,7 @@
 # sim-farm-btn
-Sistem Informasi Manajemen Farm Ayam Petelur - Berkah Telur Nusantara (SIM-FARM BTN). Proyek akhir Basis Data, S1 Teknik Informatika.
+Kelompok 7 Basis Data:  
+1. Radingka Rocha Arfian [255150200111014]
+2. Alfath Musa Damanhuri [255150207111032]
+3. Bilhaq Zouvary Brahmantya Jatmiko [255150200111020]
+4.
+5.
