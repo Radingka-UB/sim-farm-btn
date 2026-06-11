@@ -1,0 +1,10 @@
+USE SIM_FARM_BTN;
+GO
+DELETE FROM MEMASOKOBAT;
+
+INSERT INTO MEMASOKOBAT (id_supplier, id_obat) VALUES
+(3, 601),
+(3, 602),
+(5, 603),
+(3, 604),
+(1, 605);

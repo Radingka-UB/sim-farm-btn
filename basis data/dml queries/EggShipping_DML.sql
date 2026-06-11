@@ -1,0 +1,9 @@
+USE SIM_FARM_BTN;
+GO
+DELETE FROM EGGSHIPPING;
+
+INSERT INTO EGGSHIPPING (id_shipping, tanggal, total_harga, total_berat_kg, total_butir, id_customer) VALUES
+(101, '2026-06-03', 7500000, 250.50, 4000, 1),
+(102, '2026-06-04', 3000000, 110.00, 1800, 2),
+(103, '2026-06-05', 1200000, 45.00, 700, 3),
+(104, '2026-06-05', 4500000, 160.00, 2500, 4);

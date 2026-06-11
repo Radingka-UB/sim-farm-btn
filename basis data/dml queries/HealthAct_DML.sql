@@ -1,0 +1,9 @@
+USE SIM_FARM_BTN;
+GO
+DELETE FROM HEALTHACT;
+
+INSERT INTO HEALTHACT (id_act, tanggal, dosis, id_kandang, id_obat) VALUES
+(501, '2026-06-02', 1, 1001, 601),
+(502, '2026-06-02', 2, 1002, 603),
+(503, '2026-06-04', 1, 1004, 602),
+(504, '2026-06-05', 5, 1006, 605);
