@@ -1,0 +1,8 @@
+CREATE TABLE MEMASOKPAKAN
+(
+  id_pakan INT NOT NULL,
+  id_supplier INT NOT NULL,
+  PRIMARY KEY (id_pakan, id_supplier),
+  FOREIGN KEY (id_pakan) REFERENCES PAKAN(id_pakan),
+  FOREIGN KEY (id_supplier) REFERENCES SUPPLIER(id_supplier)
+);

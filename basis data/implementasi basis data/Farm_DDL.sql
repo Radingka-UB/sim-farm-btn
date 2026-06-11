@@ -1,0 +1,7 @@
+CREATE TABLE FARM
+(
+  id_farm INT NOT NULL,
+  nama_farm VARCHAR(100) NOT NULL,
+  lokasi VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id_farm)
+);
