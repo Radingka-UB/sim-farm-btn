@@ -1,4 +1,4 @@
-IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = N'SIM_FARM_BTN')
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'SIM_FARM_BT')
     CREATE DATABASE SIM_FARM_BTN;
 GO
 
