@@ -1,7 +1,6 @@
 package model;
 
 public class Customer {
-    // Variabel disesuaikan dengan draf laporan
     private int customerId;
     private String namaCustomer;
     private String tipeCustomer;
@@ -11,7 +10,7 @@ public class Customer {
     // Constructor Kosong
     public Customer() {}
 
-    // Constructor Penuh
+    // Constructor Lengkap
     public Customer(int customerId, String namaCustomer, String tipeCustomer, String alamat, String telepon) {
         this.customerId = customerId;
         this.namaCustomer = namaCustomer;
@@ -20,7 +19,7 @@ public class Customer {
         this.telepon = telepon;
     }
 
-    // GETTER & SETTER (Bagian ini yang menjembatani ke Form UI)
+    // Getter dan Setter
     public int getCustomerId() { return customerId; }
     public void setCustomerId(int customerId) { this.customerId = customerId; }
 

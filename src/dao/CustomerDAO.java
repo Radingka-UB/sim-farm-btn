@@ -8,10 +8,9 @@ import java.util.List;
 
 public class CustomerDAO {
 
-    public boolean insert(Customer cust) {
-        // Tulis kerangka query berdasarkan draf kasar. Jika besok temanmu 
-        // mengubah nama tabel/kolom di DDL, kamu CUMA perlu edit string di bawah ini!
-        String sql = "INSERT INTO Customer (CustomerID, NamaCustomer, TipeCustomer, Alamat, Telepon) VALUES (?, ?, ?, ?, ?)";
+    // 1. FUNGSI CREATE (Insert Data Customer Baru)
+    public boolean insertCustomer(Customer cust) {
+        String sql = "INSERT INTO CUSTOMER (CustomerID, NamaCustomer, TipeCustomer, Alamat, Telepon) VALUES (?, ?, ?, ?, ?)";
         
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -22,65 +21,37 @@ public class CustomerDAO {
             ps.setString(4, cust.getAlamat());
             ps.setString(5, cust.getTelepon());
             
-            return ps.executeUpdate() > 0;
+            int rowsInserted = ps.executeUpdate();
+            return rowsInserted > 0; // Return true jika berhasil menginput data
+            
         } catch (SQLException e) {
-            System.err.println("Error saat INSERT: " + e.getMessage());
+            System.out.println("Error saat insert customer: " + e.getMessage());
             return false;
         }
     }
 
-    public List<Customer> getAll() {
-        List<Customer> list = new ArrayList<>();
-        String sql = "SELECT * FROM Customer";
+    // 2. FUNGSI READ (Mengambil Semua Data Customer)
+    public List<Customer> getAllCustomer() {
+        List<Customer> listCustomer = new ArrayList<>();
+        String sql = "SELECT * FROM CUSTOMER";
         
         try (Connection conn = DBConnection.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql);
-             ResultSet rs = ps.executeQuery()) {
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
             
             while (rs.next()) {
-                Customer c = new Customer();
-                // Antisipasi pemetaan kolom database ke objek Java
-                c.setCustomerId(rs.getInt("CustomerID"));
-                c.setNamaCustomer(rs.getString("NamaCustomer"));
-                c.setTipeCustomer(rs.getString("TipeCustomer"));
-                c.setAlamat(rs.getString("Alamat"));
-                c.setTelepon(rs.getString("Telepon"));
-                list.add(c);
+                Customer cust = new Customer(
+                    rs.getInt("CustomerID"),
+                    rs.getString("NamaCustomer"),
+                    rs.getString("TipeCustomer"),
+                    rs.getString("Alamat"),
+                    rs.getString("Telepon")
+                );
+                listCustomer.add(cust);
             }
         } catch (SQLException e) {
-            System.err.println("Error saat SELECT ALL: " + e.getMessage());
+            System.out.println("Error saat mengambil data customer: " + e.getMessage());
         }
-        return list;
-    }
-
-    public boolean update(Customer cust) {
-        String sql = "UPDATE Customer SET NamaCustomer = ?, TipeCustomer = ?, Alamat = ?, Telepon = ? WHERE CustomerID = ?";
-        try (Connection conn = DBConnection.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql)) {
-            
-            ps.setString(1, cust.getNamaCustomer());
-            ps.setString(2, cust.getTipeCustomer());
-            ps.setString(3, cust.getAlamat());
-            ps.setString(4, cust.getTelepon());
-            ps.setInt(5, cust.getCustomerId());
-            
-            return ps.executeUpdate() > 0;
-        } catch (SQLException e) {
-            System.err.println("Error saat UPDATE: " + e.getMessage());
-            return false;
-        }
-    }
-
-    public boolean delete(int id) {
-        String sql = "DELETE FROM Customer WHERE CustomerID = ?";
-        try (Connection conn = DBConnection.getConnection();
-             PreparedStatement ps = conn.prepareStatement(sql)) {
-            
-            ps.setInt(1, id);
-            return ps.executeUpdate() > 0;
-        } catch (SQLException e) {
-            System.err.println("Error saat DELETE: " + e.getMessage());
-            return false;
-        }
+        return listCustomer;
     }
 }
