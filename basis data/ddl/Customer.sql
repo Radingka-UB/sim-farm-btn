@@ -1,0 +1,9 @@
+CREATE TABLE CUSTOMER
+(
+  CustomerID INT NOT NULL,
+  NamaCustomer VARCHAR(100) NOT NULL,
+  TipeCustomer VARCHAR(50) NOT NULL,
+  Alamat VARCHAR(200) NOT NULL,
+  Telepon VARCHAR(20) NOT NULL,
+  PRIMARY KEY (CustomerID)
+);

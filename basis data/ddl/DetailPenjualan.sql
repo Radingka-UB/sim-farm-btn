@@ -1,0 +1,13 @@
+CREATE TABLE DETAILPENJUALAN
+(
+  DetailID INT NOT NULL,
+  GradeTelur VARCHAR(50) NOT NULL,
+  JumlahButir INT NOT NULL,
+  BeratKg NUMERIC(7,2) NOT NULL,
+  HargaPerKg INT NOT NULL,
+  BatchID INT NOT NULL, -- FK ke Batch sesuai dengan erdplus (11).jpg kalian
+  PenjualanID INT NOT NULL,
+  PRIMARY KEY (DetailID),
+  FOREIGN KEY (BatchID) REFERENCES BATCH(BatchID),
+  FOREIGN KEY (PenjualanID) REFERENCES PENJUALANTELUR(PenjualanID) ON DELETE CASCADE
+);

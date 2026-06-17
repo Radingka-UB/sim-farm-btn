@@ -1,0 +1,11 @@
+CREATE TABLE KANDANG
+(
+  KandangID INT NOT NULL,
+  NamaKandang VARCHAR(100) NOT NULL,
+  KapasitasMaksimal INT NOT NULL,
+  StatusKandang VARCHAR(30) NOT NULL,
+  TipeKandang VARCHAR(50) NOT NULL,
+  FarmID INT NOT NULL,
+  PRIMARY KEY (KandangID),
+  FOREIGN KEY (FarmID) REFERENCES FARM(FarmID)
+);

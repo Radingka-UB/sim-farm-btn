@@ -1,0 +1,13 @@
+CREATE TABLE BATCH
+(
+  BatchID INT NOT NULL,
+  KodeAyam VARCHAR(50) NOT NULL,
+  JenisAyam VARCHAR(100) NOT NULL,
+  TanggalMasuk DATE NOT NULL,
+  JumlahAyamAwal INT NOT NULL,
+  PopulasiSekarang INT NOT NULL,
+  StatusBatch VARCHAR(30) NOT NULL,
+  KandangID INT NOT NULL,
+  PRIMARY KEY (BatchID),
+  FOREIGN KEY (KandangID) REFERENCES KANDANG(KandangID)
+);

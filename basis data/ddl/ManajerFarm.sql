@@ -1,0 +1,8 @@
+CREATE TABLE MANAJERFARM
+(
+  KaryawanID INT NOT NULL,
+  GajiPokok INT NOT NULL,
+  TanggalPengangkatan DATE NOT NULL,
+  PRIMARY KEY (KaryawanID),
+  FOREIGN KEY (KaryawanID) REFERENCES KARYAWAN(KaryawanID)
+);
