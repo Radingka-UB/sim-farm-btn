@@ -1,0 +1,12 @@
+CREATE TABLE PEMBELIANOBAT
+(
+  PembelianObatID INT NOT NULL,
+  TanggalBeli DATE NOT NULL,
+  JumlahStok INT NOT NULL,     
+  HargaTotal INT NOT NULL,
+  FarmID INT NOT NULL,
+  SupplierID INT NOT NULL,
+  PRIMARY KEY (PembelianObatID),
+  FOREIGN KEY (FarmID) REFERENCES FARM(FarmID),
+  FOREIGN KEY (SupplierID) REFERENCES SUPPLIER(SupplierID)
+);
