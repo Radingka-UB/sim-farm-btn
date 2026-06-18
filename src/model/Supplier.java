@@ -1,0 +1,34 @@
+package model;
+
+public class Supplier {
+    private int supplierId;
+    private String namaSupplier;
+    private String alamat;
+    private String telepon;
+    private String email;
+
+    public Supplier() {}
+
+    public Supplier(int supplierId, String namaSupplier, String alamat, String telepon, String email) {
+        this.supplierId = supplierId;
+        this.namaSupplier = namaSupplier;
+        this.alamat = alamat;
+        this.telepon = telepon;
+        this.email = email;
+    }
+
+    public int getSupplierId() { return supplierId; }
+    public void setSupplierId(int supplierId) { this.supplierId = supplierId; }
+
+    public String getNamaSupplier() { return namaSupplier; }
+    public void setNamaSupplier(String namaSupplier) { this.namaSupplier = namaSupplier; }
+
+    public String getAlamat() { return alamat; }
+    public void setAlamat(String alamat) { this.alamat = alamat; }
+
+    public String getTelepon() { return telepon; }
+    public void setTelepon(String telepon) { this.telepon = telepon; }
+
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+}
