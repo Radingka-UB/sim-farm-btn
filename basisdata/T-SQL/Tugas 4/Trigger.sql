@@ -8,8 +8,4 @@ BEGIN
     SET B.PopulasiSekarang = B.PopulasiSekarang - i.JumlahMati
     FROM BATCH B
     JOIN INSERTED i ON B.BatchID = i.BatchID;
-
-    INSERT INTO LOG_KEMATIAN (BatchID, JumlahMati, TanggalCatat)
-    SELECT BatchID, JumlahMati, GETDATE()
-    FROM INSERTED;
 END;
