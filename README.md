@@ -34,7 +34,7 @@ Proyek ini merupakan hasil kerja sama dari mahasiswa mata kuliah Basis Data kelo
 
 ## 📖 Proses Pengembangan
  
-Kami membangun proyek simulasi pertanian ini dengan tujuan menciptakan sistem manajemen peternakan yang praktis dan aplikatif. Aplikasi ini menampilkan arsitektur MVC lengkap dengan lapisan terpisah untuk model, tampilan, dan akses data. Sistem terhubung dengan database Microsoft SQL Server yang mengelola semua operasi pertanian, data batch ayam, dan pelacakan sumber daya. Antarmuka memberikan cara yang intuitif untuk berinteraksi dengan simulasi peternakan, memungkinkan pengguna untuk mengelola kandang, melacak sumber daya, dan memantau operasi peternakan secara real-time. Proyek ini mendemonstrasikan desain database yang tepat dengan skema relasional dan praktik manajemen data yang komprehensif.
+Kami membangun proyek simulasi pertanian ini dengan tujuan menciptakan sistem manajemen peternakan yang praktis dan aplikatif. Aplikasi ini menampilkan arsitektur MVC lengkap dengan lapisan terpisah untuk model, tampilan, dan akses data. Sistem terhubung dengan database Microsoft SQL Server yang mengelola semua operasi peternakan, data batch ayam, dan pelacakan sumber daya. Antarmuka memberikan cara yang intuitif untuk berinteraksi dengan simulasi peternakan, memungkinkan pengguna untuk mengelola kandang, melacak sumber daya, dan memantau operasi peternakan secara real-time. Proyek ini mendemonstrasikan desain database yang tepat dengan skema relasional dan praktik manajemen data yang komprehensif.
 
 ## 📜 Prasyarat
 
