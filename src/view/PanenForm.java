@@ -15,7 +15,7 @@ public class PanenForm extends JFrame {
     private JTextField txtPanenID, txtTanggal, txtKaryawanID, txtBatchID;
     private JButton btnInsert, btnUpdate, btnDelete, btnClear;
     private PanenTelurDAO dao = new PanenTelurDAO();
-
+    
     public PanenForm() {
         setTitle("SIM-FARM BTN - Modul Panen Telur");
         setSize(750, 500);
@@ -145,6 +145,7 @@ public class PanenForm extends JFrame {
         });
 
         btnClear.addActionListener(e -> clearForm());
+        
     }
 
     private void loadDataToGrid() {
@@ -161,6 +162,7 @@ public class PanenForm extends JFrame {
             };
             tableModel.addRow(row);
         }
+        tableModel.fireTableDataChanged();
     }
 
     private PanenTelur getFormDate() {
@@ -172,9 +174,10 @@ public class PanenForm extends JFrame {
         return new PanenTelur(id, tgl, karId, batId);
     }
 
-    private void clearForm() {
+ private void clearForm() {
+        System.out.println("-> Fungsi clearForm() berhasil dipanggil!"); 
         txtPanenID.setText("");
-        txtTanggal.setText("2026-06-18");
+        txtTanggal.setText("2026-06-19"); 
         txtKaryawanID.setText("");
         txtBatchID.setText("");
         txtPanenID.setEditable(true);
