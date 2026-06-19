@@ -14,8 +14,7 @@ public class StokGudangPakanDAO {
             ps.setInt(1, sgp.getStokPakanId());
             ps.setInt(2, sgp.getJumlahStokKg());
             ps.setDate(3, sgp.getTanggalUpdate());
-            
-            // Mengatasi kolom tanggal kadaluarsa yang Nullable
+        
             if (sgp.getTanggalKadaluarsa() != null) {
                 ps.setDate(4, sgp.getTanggalKadaluarsa());
             } else {

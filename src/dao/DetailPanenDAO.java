@@ -51,7 +51,6 @@ public class DetailPanenDAO {
         }
         return listDetail;
     }
-    // Tambahkan ini di dalam kelas DetailPanenDAO
     public boolean updateDetailPanen(DetailPanen dp) {
         String sql = "UPDATE DETAILPANEN SET GradeTelur = ?, JumlahButir = ?, BeratKg = ?, PanenID = ? WHERE DetailPanenID = ?";
         try (Connection conn = DBConnection.getConnection();

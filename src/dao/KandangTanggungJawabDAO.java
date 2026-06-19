@@ -10,7 +10,6 @@ public class KandangTanggungJawabDAO {
 
     public boolean insertTanggungJawab(KandangTanggungJawab ktj) {
         String sql;
-        // Jika tanggalDitugaskan null, jangan masukkan kolomnya ke query agar DEFAULT GETDATE() dari SQL Server bekerja
         if (ktj.getTanggalDitugaskan() == null) {
             sql = "INSERT INTO KANDANGTANGGUNGJAWAB (KaryawanID, KandangID) VALUES (?, ?)";
         } else {

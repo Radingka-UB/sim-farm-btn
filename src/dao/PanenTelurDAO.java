@@ -34,7 +34,6 @@ public class PanenTelurDAO {
         } catch (SQLException e) { System.out.println("Error: " + e.getMessage()); }
         return list;
     }
-    // Tambahkan ini di dalam kelas PanenTelurDAO
     public boolean updatePanen(PanenTelur pt) {
         String sql = "UPDATE PANENTELUR SET TanggalPanen = ?, KaryawanID = ?, BatchID = ? WHERE PanenID = ?";
         try (Connection conn = DBConnection.getConnection();

@@ -9,14 +9,14 @@ public class KandangTanggungJawab {
 
     public KandangTanggungJawab() {}
 
-    // Constructor lengkap (bisa dipakai saat select data)
+
     public KandangTanggungJawab(int karyawanId, int kandangId, Date tanggalDitugaskan) {
         this.karyawanId = karyawanId;
         this.kandangId = kandangId;
         this.tanggalDitugaskan = tanggalDitugaskan;
     }
 
-    // Constructor khusus untuk insert tanpa tanggal (memanfaatkan DEFAULT GETDATE() dari SQL Server)
+  
     public KandangTanggungJawab(int karyawanId, int kandangId) {
         this.karyawanId = karyawanId;
         this.kandangId = kandangId;

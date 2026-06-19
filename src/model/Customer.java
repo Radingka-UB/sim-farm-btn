@@ -7,10 +7,10 @@ public class Customer {
     private String alamat;
     private String telepon;
 
-    // Constructor Kosong
+
     public Customer() {}
 
-    // Constructor Lengkap
+
     public Customer(int customerId, String namaCustomer, String tipeCustomer, String alamat, String telepon) {
         this.customerId = customerId;
         this.namaCustomer = namaCustomer;
@@ -19,7 +19,6 @@ public class Customer {
         this.telepon = telepon;
     }
 
-    // Getter dan Setter
     public int getCustomerId() { return customerId; }
     public void setCustomerId(int customerId) { this.customerId = customerId; }
 

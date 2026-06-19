@@ -6,7 +6,7 @@ public class StokGudangPakan {
     private int stokPakanId;
     private int jumlahStokKg;
     private Date tanggalUpdate;
-    private Date tanggalKadaluarsa; // Bisa bernilai null
+    private Date tanggalKadaluarsa; 
     private int farmId;
     private int pakanId;
 

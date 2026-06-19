@@ -15,7 +15,7 @@ public class TindakanMedisDAO {
             ps.setDate(2, tm.getTanggalTindakan());
             ps.setString(3, tm.getJenisTindakan());
             ps.setInt(4, tm.getDosisAktual());
-            ps.setString(5, tm.getKeterangan()); // Mengizinkan varchar null
+            ps.setString(5, tm.getKeterangan()); 
             ps.setInt(6, tm.getBatchId());
             ps.setInt(7, tm.getObatId());
             ps.setInt(8, tm.getDokterId());
