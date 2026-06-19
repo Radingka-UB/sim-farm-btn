@@ -45,16 +45,6 @@ Pastikan komponen berikut sudah terinstal di perangkat Anda sebelum menjalankan 
 * **Database Client** (SSMS / DBeaver / Dadbod UI / VS Code Extension)
 * **Java IDE** (VS Code / IntelliJ IDEA / NetBeans)
 
-## Langkah 2: Pengaturan Environment Variables (.env)
-Aplikasi ini menggunakan `dotenv-java` untuk mengamankan kredensial database.
-1. Di root folder proyek, ada sebuah file baru bernama `.env`.
-2. Ubah isi di dalamnya sesuai dengan konfigurasi SQL Server di laptop Anda:
-```
-DB_URL=jdbc:sqlserver://localhost:1433;databaseName=SIM_FARM_BTN;encrypt=false;
-DB_USER=username_sql_server_anda
-DB_PASSWORD=password_sql_server_anda
-```
-
 ## 🚀 Cara Menjalankan Proyek  
 
 1. **Clone Repository**
