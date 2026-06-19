@@ -61,7 +61,7 @@ DB_USER=username_sql_server_anda
 DB_PASSWORD=password_sql_server_anda
 ```
 3. **Compile dan Jalankan**
-- Jalankan Run.sh untuk pengguna MacOS/Linus
+- Jalankan Run.sh untuk pengguna MacOS/Linux
 - Jalankan Run.exe untuk pengguna Windows
 
 ## 📸 Preview Aplikasi  
