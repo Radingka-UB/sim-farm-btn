@@ -6,11 +6,13 @@ Sebuah sistem simulasi pertanian yang komprehensif dibangun dengan Java. Aplikas
  
 Proyek ini merupakan hasil kerja sama dari mahasiswa mata kuliah Basis Data kelompok 7 kelas TIF-B dalam mengembangkan sistem simulasi pertanian yang fungsional dan user-friendly.  
 
-1. Radingka Rocha Arfian [255150200111014]
-2. Alfath Musa Damanhuri [255150207111032]
-3. Bilhaq Zouvary Brahmantya Jatmiko [255150200111020]
-4. Muhammad Syafiq Sukma Al Barraq [255150207111030]
-5. Muhammad Raziq Syuhada [245150200111019]
+| Anggota               | NIM                |
+| ------------------------- | ------------------- |
+| **Radingka Rocha Arfian**               | 255150200111014     |
+| **Alfath Musa Damanhuri**        | 255150207111032  |
+| **Bilhaq Zouvary Brahmantya Jatmiko**    | 255150200111020   |
+| **Muhammad Syafiq Sukma Al Barraq**         | 255150207111030        |
+| **Muhammad Raziq Syuhada**      | 245150200111019      |
 
 ## 🛠️ Teknologi yang Digunakan
  
