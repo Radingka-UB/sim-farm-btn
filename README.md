@@ -1,4 +1,4 @@
-# 🌾 SIM-FARM BTN - Modul Panen Telur
+# 🌾 SIM-FARM BTN - Modul Panen 
 
 Sebuah sistem simulasi pertanian yang komprehensif dibangun dengan Java. Aplikasi ini dibuat dengan Graphic User Interface yang menyediakan antarmuka manajemen pertanian yang interaktif dengan backend database SQL Server yang kuat untuk menangani operasi pertanian, manajemen tanaman, dan pelacakan sumber daya.  
 
