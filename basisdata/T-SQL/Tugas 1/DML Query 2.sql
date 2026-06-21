@@ -1,4 +1,6 @@
 -- Query 2: Farm dengan rata-rata harga pakan di atas rata-rata keseluruhan
+use SIM_FARM_BTN
+go
 SELECT F.NamaFarm,
        AVG(P.HargaPerKg) AS RataHargaFarm
 FROM FARM F

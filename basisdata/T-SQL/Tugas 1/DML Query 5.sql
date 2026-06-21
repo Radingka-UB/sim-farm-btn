@@ -1,4 +1,6 @@
 -- Query 5: Farm dengan total kematian ayam tertinggi dibanding rata‑rata semua farm
+use SIM_FARM_BTN
+go
 SELECT F.NamaFarm,
        SUM(KA.JumlahMati) AS TotalKematian
 FROM KEMATIANAYAM KA

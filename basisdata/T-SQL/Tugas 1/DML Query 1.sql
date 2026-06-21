@@ -1,4 +1,6 @@
 -- Query 1: Total pembelian pakan per supplier per farm
+use sim_farm_btn
+go
 SELECT F.NamaFarm,
        S.NamaSupplier,
        SUM(PP.HargaTotal) AS TotalPembelian,

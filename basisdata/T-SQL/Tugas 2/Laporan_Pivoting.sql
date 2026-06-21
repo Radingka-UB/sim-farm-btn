@@ -1,4 +1,6 @@
 -- Rekap total panen per bulan untuk setiap farm dari Januari hingga Juni.
+use SIM_FARM_BTN
+go
 SELECT NamaFarm,
        [Jan] AS Januari,
        [Feb] AS Februari,

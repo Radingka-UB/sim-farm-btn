@@ -1,4 +1,6 @@
 -- UDF untuk menghitung persentase kematian ayam dalam suatu batch berdasarkan jumlah ayam awal dan jumlah ayam yang mati.
+use SIM_FARM_BTN
+go
 CREATE FUNCTION fn_PersentaseKematian
 (
     @BatchID INT
@@ -19,4 +21,6 @@ BEGIN
 END;
 
 -- Contoh pemakainannya:
+use SIM_FARM_BTN
+go
 SELECT dbo.fn_PersentaseKematian(1) AS PersentaseKematian;

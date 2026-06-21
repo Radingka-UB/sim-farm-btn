@@ -1,4 +1,6 @@
 -- Query 4: Total penjualan telur per farm dan rata‑rata berat per grade
+use SIM_FARM_BTN
+go
 SELECT F.NamaFarm,
        DP.GradeTelur,
        SUM(DP.JumlahButir) AS TotalTelur,
